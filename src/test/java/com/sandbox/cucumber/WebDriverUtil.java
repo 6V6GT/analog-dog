@@ -31,8 +31,6 @@ public class WebDriverUtil {
                     break;
                 case FF:
                     DesiredCapabilities capabilities = DesiredCapabilities.firefox();
-                    FirefoxOptions options = new FirefoxOptions();
-                    options.setLogLevel(Level.ALL);
                     System.setProperty("webdriver.gecko.driver", "C:/drivers/geckodriver/geckodriver.exe");
                     driver = new FirefoxDriver(capabilities);
             }
